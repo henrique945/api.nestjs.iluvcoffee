@@ -6,7 +6,14 @@ import { CoffeesService } from './coffees/coffees.service';
 
 @Module({
   imports: [],
-  controllers: [AppController, CoffeesController],
-  providers: [AppService, CoffeesService],
+  controllers: [
+    AppController,
+    CoffeesController,
+  ],
+  providers: [
+    AppService,
+    CoffeesService,
+  ],
 })
-export class AppModule {}
+export class AppModule {
+}
