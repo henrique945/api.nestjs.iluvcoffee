@@ -34,7 +34,7 @@ export class CoffeesController {
    * Recebe apenas a variavel escrita no body, nesse caso, 'name'
    */
   @Post()
-  @HttpCode(HttpStatus.GONE)
+  @HttpCode(HttpStatus.ACCEPTED)
   create(@Body() createCoffeeDto: CreateCoffeeDto) {
     return this.coffeesService.create(createCoffeeDto);
   }
